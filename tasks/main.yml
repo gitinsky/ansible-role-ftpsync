@@ -1,0 +1,11 @@
+---
+# lftp is much better for FTP synchronization that anything called ftp(-)?sync
+#- name: install libwww-perl
+#  apt: name=libwww-perl state=present
+
+# lftp is much better for FTP synchronization that anything called ftp(-)?sync
+#- name: clone ftpsync
+#  git: repo=git://git.sv.gnu.org/ftpsync.git dest=/opt/ftpsync accept_hostkey=yes
+
+- name: install lftp
+  apt: name=lftp state=present
